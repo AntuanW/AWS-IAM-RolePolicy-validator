@@ -63,7 +63,7 @@ Maximum: 128
 
 ### Self-Assessment
 - [x] Method veryfying the input JSON data <br>
-- [x]Readme includes "how to run" instructions <br>
+- [x] Readme includes "how to run" instructions <br>
 - [x] Input data format is defined as AWS::IAM::Role Policy <br>
 - [x] Unit tests<br>
 - [x] Covering edge cases<br>
