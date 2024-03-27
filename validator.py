@@ -1,5 +1,6 @@
 import sys
-from policy import Policy
+
+from src.aws_policy.policy import Policy
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -25,5 +26,4 @@ if __name__ == "__main__":
     except Exception as e:
         print("Unknown Exception: ", e)
         exit(1)
-
     exit(0)

@@ -1,4 +1,4 @@
-invalid_json = """{"PolicyName": 123, "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*"}]}""" # Invalid JSON
+invalid_json = """{"PolicyName": 123, "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*"}]}"""  # Invalid JSON
 
 policy_name_missing = """{"PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*"}]}}"""  # PolicyName missing
 
@@ -6,9 +6,9 @@ policy_document_missing = """{"PolicyName": "test"}"""  # PolicyDocument missing
 
 policy_unwanted_keys = """{"PolicyName": "test", "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*", "Resource": "*"}]}, "UnwantedKey": "UnwantedValue"}"""  # Unwanted keys
 
-policy_name_invalid_type = """{"PolicyName": 123, "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*"}]}}"""# PolicyName not a string
+policy_name_invalid_type = """{"PolicyName": 123, "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*"}]}}"""  # PolicyName not a string
 
-policy_name_too_short = """{"PolicyName": "", "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*"}]}}"""# PolicyName not a string
+policy_name_too_short = """{"PolicyName": "", "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*"}]}}"""  # PolicyName not a string
 
 too_long_name = "a" * 129
 policy_name_too_long = f'''{{"PolicyName": "{too_long_name}", "PolicyDocument": {{"Version": "2012-10-17", "Statement": [{{"Effect": "Allow", "Action": "*"}}]}}}}'''  # PolicyName too long
@@ -25,6 +25,6 @@ policy_document_statement_invalid_type = """{"PolicyName": "test", "PolicyDocume
 
 policy_document_statement_content_invalid_type = """{"PolicyName": "test", "PolicyDocument": {"Version": "2012-10-17", "Statement": ["invalid"]}}"""  # Statement content not a dictionary
 
-policy_resource_is_asterix = """{"PolicyName": "test", "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*", "Resource": "*"}]}}"""  # Resource is *
+policy_resource_is_asterisk = """{"PolicyName": "test", "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*", "Resource": "*"}]}}"""  # Resource is *
 
-policy_resource_is_not_asterix = """{"PolicyName": "test", "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*", "Resource": "arn:aws:s3:::my_corporate_bucket/*"}]}}"""  # Resource is not *
+policy_resource_is_not_asterisk = """{"PolicyName": "test", "PolicyDocument": {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": "*", "Resource": "arn:aws:s3:::my_corporate_bucket/*"}]}}"""  # Resource is not *

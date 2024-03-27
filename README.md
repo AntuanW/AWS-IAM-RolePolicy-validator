@@ -6,10 +6,24 @@ Little Python script to verify AWS::IAM::Role Policy JSON
 
 ## How to run 
 1. Check if Python is installed by running `python -V` command.
-2. If so, create virtual environment or use global environment.
-3. Run `validator.py` script with file name or path to JSON you want check with command:
+2. If so, create virtual environment with `python -m venv .venv`.
+3. Next, activate installed environment with (depends on your system):<br>
+    On MAC/UNIX <br>
+    ```bash
+    source env/bin/activate
+    ```
+    On Windows <br>
+    ```bash
+    env/Scripts/activate.bat # In CMD
+    env/Scripts/Activate.ps1 # In Powershel
+    ```
+4. Run `validator.py` script with file name or path to JSON you want check with command:
     ```bash
     python validator.py <json_file/path>
+    ```
+5. To run tests use:
+    ```cmd
+    python -m unittest
     ```
 
 ## AWS::IAM::Role Policy JSON specification
