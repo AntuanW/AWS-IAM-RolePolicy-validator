@@ -10,7 +10,7 @@ Little Python script to verify AWS::IAM::Role Policy JSON
 3. Next, activate installed environment with (depends on your system):<br>
     On MAC/UNIX <br>
     ```bash
-    source env/bin/activate
+    source .venv/bin/activate  
     ```
     On Windows <br>
     ```bash
