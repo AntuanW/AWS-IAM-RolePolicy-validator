@@ -23,8 +23,7 @@ if __name__ == "__main__":
         print(e)
         exit(1)
     except Exception as e:
-        print(e)
+        print("Unknown Exception: ", e)
         exit(1)
-    
+
     exit(0)
-    
