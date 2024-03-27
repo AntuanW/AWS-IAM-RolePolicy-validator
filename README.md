@@ -62,11 +62,11 @@ Maximum: 128
 [Link for further documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-role-policy.html)
 
 ### Self-Assessment
-[x] Method veryfying the input JSON data <br>
-[x]Readme includes "how to run" instructions <br>
-[x] Input data format is defined as AWS::IAM::Role Policy <br>
-[x] Unit tests<br>
-[x] Covering edge cases<br>
+- [x] Method veryfying the input JSON data <br>
+- [x]Readme includes "how to run" instructions <br>
+- [x] Input data format is defined as AWS::IAM::Role Policy <br>
+- [x] Unit tests<br>
+- [x] Covering edge cases<br>
 
 ### Author
 [Antoni Wójcik](https://github.com/AntuanW)
